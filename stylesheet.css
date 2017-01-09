@@ -1,0 +1,64 @@
+html {
+  width: 780px;
+  margin: auto;
+  background-color: #f26f85;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+h2 {
+  font-size: 24px;
+  font-family: fantasy;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 12px 12px;
+  display: inline-block;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+form {
+  margin: auto;
+  width: auto;
+  display: inline-block;
+}
+
+label {
+  font-weight: bold;
+  float: auto;
+  margin: 0 10px 0 10px;
+  position: relative;
+}
+
+div {
+    font-size: 22px;
+    padding: inherit;
+    }
+
+.column {
+  display: inline-block;
+  padding: 10px;
+}
+
+input[type=text] {
+  width: auto;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  float: auto;
+}
+
+input[type=submit] {
+  background-color: #FFA500;
+  color: white;
+  padding: 12px 18px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  float: auto;
+}

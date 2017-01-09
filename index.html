@@ -2,31 +2,66 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Weekend 1</title>
+    <title>Weekend 1 Homework</title>
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
     <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
     </head>
   <body>
-    <form>
+    <form id = submit>
       <label for="employeeFirstName">First Name</label>
       <input type="text" id="employeeFirstName" name="employeeFirstName" />
+
       <label for="employeeLastName">Last Name</label>
       <input type="text" id="employeeLastName" name="employeeLastName" />
+
       <label for="employeeIdNumber">ID Number</label>
       <input type="text" name="employeeIdNumber" />
-      <label for="JobTitle">Job Title</label>
-      <input type="text" id="JobTitle" />
-      <label for="annualSalary">Annual Salary</label>
-      <input type="text" ="annualSalary"/>
-      <input type="submit" value="Submit"/>
+
+      <label for="employeeJobTitle">Job Title</label>
+      <input type="text" name="JobTitle" />
+
+      <label for="employeeSalary">Annual Salary</label>
+      <input type=number name="employeeSalary" />
+
+      <input type="submit" value="Submit" />
     </form>
 
     <div id="employees">
-      <h2>Employees</h2>
-      <!-- to be added via JavaScript -->
+
+
+    <div id="Employee Name" class="column">
+      <h3>Employee Name</h3>
     </div>
+
+    <div class="column" id="ID Number">
+      <h3>ID Number</h3>
+    </div>
+
+    <div class="column" id="Job Title">
+      <h3>Job Title</h3>
+    </div>
+
+    <div class="column" id="Annual Salary">
+      <h3>Annual Salary</h3>
+    </div>
+  </div>
+
+    <div class="column" id="monthly">
+      <h2> Employee Monthly Expenditure:</h2>
+    
+    </div>
+
+
+
+    <form id="employeeRemoval">
+      <label for="removeEmployee">Employee That Will Be Removed</label>
+      <input type="text" name="employeeRemove"/>
+      <input type="submit" value="Submit" />
+    </form>
+
   </body>
 </html>
