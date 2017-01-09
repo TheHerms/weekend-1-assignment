@@ -41,7 +41,7 @@ function appendDom(emp) {
   var $empID = $('<div class="column" id="empID">' + emp.employeeIdNumber +'</div>');
   var $empJobTitle = $('<div class="column" id="empJobTitle">' + emp.JobTitle + '</div>');
   var $empAnnualSalary = $('<div class="column annualSalaryClass" id="empAnnualSalary">' + emp.employeeSalary +'</div>');
-  totalSalary += emp.employeeSalary;
+  totalSalary += Number(emp.employeeSalary);
 
   $emp.append($empName); // add our employee data
   $emp.append($empID);
@@ -55,13 +55,13 @@ function appendDom(emp) {
 
 function calculateSalary() {
 
-  var $totalMonthlySalary = totalSalary/12;
+  //var $totalMonthlySalary = totalSalary/12;
 
   $('div').remove('.monthly');
   var $exp = $('<div class="monthly"></div>');
-  $($exp).append('<p>' + $totalMonthlySalary + '</p>');
+  $($exp).append('<p>' + (totalSalary/12) + '</p>');
   $($exp).appendTo('#monthly');
-  console.log($totalMonthlySalary);
+  console.log(totalSalary);
 
 
 }
